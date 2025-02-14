@@ -93,6 +93,72 @@
           }
         }
       }
+    },
+    "mi-biblioteca": {
+      "projectType": "library",
+      "root": "projects/mi-biblioteca",
+      "sourceRoot": "projects/mi-biblioteca/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/mi-biblioteca/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/mi-biblioteca/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/mi-biblioteca/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/mi-biblioteca/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    },
+    "chorizus-mi-biblioteca": {
+      "projectType": "library",
+      "root": "projects/chorizus-mi-biblioteca",
+      "sourceRoot": "projects/chorizus-mi-biblioteca/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/chorizus-mi-biblioteca/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/chorizus-mi-biblioteca/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/chorizus-mi-biblioteca/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/chorizus-mi-biblioteca/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
     }
   }
 }

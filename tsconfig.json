@@ -9,6 +9,14 @@
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
+    "paths": {
+      "chorizus-mi-biblioteca": [
+        "dist/chorizus-mi-biblioteca"
+      ],
+      "mi-biblioteca": [
+        "dist/mi-biblioteca"
+      ]
+    },
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
